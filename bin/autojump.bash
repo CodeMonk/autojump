@@ -61,7 +61,7 @@ j() {
 
     output="$(autojump ${@})"
     if [[ -d "${output}" ]]; then
-        echo -e "\\033[31m${output}\\033[0m"
+        echo -e "\\033[32m${output}\\033[0m"
         cd "${output}"
     else
         echo "autojump: directory '${@}' not found"
